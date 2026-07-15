@@ -1,0 +1,706 @@
+/* ==========================================================
+   animation.css
+========================================================== */
+
+
+/* ==========================================================
+   Loading
+========================================================== */
+
+.loader {
+
+    opacity: 1;
+    visibility: visible;
+
+    transition:
+        opacity .8s ease,
+        visibility .8s ease;
+
+}
+
+.loader.is-hidden {
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    pointer-events: none;
+
+}
+
+.loader__text {
+
+    animation: loaderText 1.5s ease infinite alternate;
+
+}
+
+.loader__line {
+
+    animation: loaderLine 2s ease infinite;
+
+}
+
+
+/* ==========================================================
+   Reveal
+========================================================== */
+
+.reveal {
+
+    opacity: 0;
+
+    transform: translateY(80px);
+
+}
+
+.reveal.is-visible {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+}
+
+
+/* ==========================================================
+   Fade Up
+========================================================== */
+
+.fade-up {
+
+    opacity: 0;
+
+    transform: translateY(60px);
+
+}
+
+.fade-up.active {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+}
+
+
+/* ==========================================================
+   Fade Left
+========================================================== */
+
+.fade-left {
+
+    opacity: 0;
+
+    transform: translateX(-80px);
+
+}
+
+.fade-left.active {
+
+    opacity: 1;
+
+    transform: translateX(0);
+
+}
+
+
+/* ==========================================================
+   Fade Right
+========================================================== */
+
+.fade-right {
+
+    opacity: 0;
+
+    transform: translateX(80px);
+
+}
+
+.fade-right.active {
+
+    opacity: 1;
+
+    transform: translateX(0);
+
+}
+
+
+/* ==========================================================
+   Scale
+========================================================== */
+
+.scale {
+
+    opacity: 0;
+
+    transform: scale(.9);
+
+}
+
+.scale.active {
+
+    opacity: 1;
+
+    transform: scale(1);
+
+}
+
+
+/* ==========================================================
+   GSAP Initial
+========================================================== */
+
+.gsap-hidden {
+
+    opacity: 0;
+
+}
+
+.gsap-y {
+
+    transform: translateY(100px);
+
+}
+
+.gsap-left {
+
+    transform: translateX(-100px);
+
+}
+
+.gsap-right {
+
+    transform: translateX(100px);
+
+}
+
+.gsap-scale {
+
+    transform: scale(.8);
+
+}
+
+
+/* ==========================================================
+   Transition
+========================================================== */
+
+.reveal,
+.fade-up,
+.fade-left,
+.fade-right,
+.scale {
+
+    transition:
+
+        opacity .9s ease,
+
+        transform .9s cubic-bezier(.22,.61,.36,1);
+
+}
+/* ==========================================================
+   Hover
+========================================================== */
+
+.hover-lift {
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease;
+
+}
+
+.hover-lift:hover {
+
+    transform: translateY(-10px);
+
+    box-shadow: 0 20px 50px rgba(0,0,0,.12);
+
+}
+
+.hover-scale {
+
+    transition: transform .35s ease;
+
+}
+
+.hover-scale:hover {
+
+    transform: scale(1.05);
+
+}
+
+.hover-rotate {
+
+    transition: transform .4s ease;
+
+}
+
+.hover-rotate:hover {
+
+    transform: rotate(-2deg) scale(1.03);
+
+}
+
+
+/* ==========================================================
+   Button Ripple
+========================================================== */
+
+.button {
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+.button::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background: rgba(255,255,255,.15);
+
+    transform: scale(0);
+
+    opacity: 0;
+
+    border-radius: inherit;
+
+}
+
+.button:hover::after {
+
+    animation: ripple .7s ease;
+
+}
+
+
+/* ==========================================================
+   Glow
+========================================================== */
+
+.glow {
+
+    animation: glow 4s ease-in-out infinite;
+
+}
+
+.hero__circle {
+
+    animation: floating 7s ease-in-out infinite;
+
+}
+
+.hero__circle--2 {
+
+    animation-delay: 1s;
+
+}
+
+.hero__circle--3 {
+
+    animation-delay: 2s;
+
+}
+
+
+/* ==========================================================
+   Floating
+========================================================== */
+
+.floating {
+
+    animation: floating 6s ease-in-out infinite;
+
+}
+
+.floating-slow {
+
+    animation: floatingSlow 10s ease-in-out infinite;
+
+}
+
+
+/* ==========================================================
+   Scroll Indicator
+========================================================== */
+
+.hero__scroll {
+
+    animation: scrollIndicator 2.5s infinite;
+
+}
+
+.hero__scroll::after {
+
+    content: "";
+
+    display: block;
+
+    width: 2px;
+
+    height: 45px;
+
+    margin: 12px auto 0;
+
+    background: var(--accent);
+
+    animation: scrollLine 2.5s infinite;
+
+}
+
+
+/* ==========================================================
+   Marquee
+========================================================== */
+
+.marquee {
+
+    overflow: hidden;
+
+    white-space: nowrap;
+
+}
+
+.marquee__inner {
+
+    display: inline-block;
+
+    animation: marqueeMove 22s linear infinite;
+
+}
+
+
+/* ==========================================================
+   Cursor
+========================================================== */
+
+.cursor {
+
+    transition:
+
+        width .25s,
+
+        height .25s,
+
+        background .25s,
+
+        border .25s;
+
+}
+
+.cursor.is-hover {
+
+    width: 80px;
+
+    height: 80px;
+
+    background: rgba(56,189,248,.15);
+
+    border-color: transparent;
+
+}
+
+
+/* ==========================================================
+   Background Glow
+========================================================== */
+
+.background-glow {
+
+    animation: glowMove 12s ease-in-out infinite alternate;
+
+}
+
+
+/* ==========================================================
+   Keyframes
+========================================================== */
+
+@keyframes loaderText {
+
+    from{
+
+        opacity:.4;
+
+        transform:translateY(10px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes loaderLine{
+
+    0%{
+
+        width:0;
+
+    }
+
+    50%{
+
+        width:180px;
+
+    }
+
+    100%{
+
+        width:0;
+
+    }
+
+}
+
+@keyframes ripple{
+
+    0%{
+
+        transform:scale(0);
+
+        opacity:.4;
+
+    }
+
+    100%{
+
+        transform:scale(3);
+
+        opacity:0;
+
+    }
+
+}
+
+@keyframes floating{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-25px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes floatingSlow{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-40px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes glow{
+
+    0%{
+
+        filter:drop-shadow(0 0 0 rgba(56,189,248,0));
+
+    }
+
+    50%{
+
+        filter:drop-shadow(0 0 35px rgba(56,189,248,.45));
+
+    }
+
+    100%{
+
+        filter:drop-shadow(0 0 0 rgba(56,189,248,0));
+
+    }
+
+}
+
+@keyframes glowMove{
+
+    from{
+
+        transform:translate(0,0);
+
+    }
+
+    to{
+
+        transform:translate(-80px,60px);
+
+    }
+
+}
+
+@keyframes marqueeMove{
+
+    from{
+
+        transform:translateX(0);
+
+    }
+
+    to{
+
+        transform:translateX(-50%);
+
+    }
+
+}
+
+@keyframes scrollIndicator{
+
+    0%{
+
+        opacity:.3;
+
+    }
+
+    50%{
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        opacity:.3;
+
+    }
+
+}
+
+@keyframes scrollLine{
+
+    0%{
+
+        transform:scaleY(0);
+
+        transform-origin:top;
+
+    }
+
+    50%{
+
+        transform:scaleY(1);
+
+        transform-origin:top;
+
+    }
+
+    51%{
+
+        transform-origin:bottom;
+
+    }
+
+    100%{
+
+        transform:scaleY(0);
+
+        transform-origin:bottom;
+    
+    }
+
+}
+
+
+/* ==========================================================
+   Reduced Motion
+========================================================== */
+
+@media (prefers-reduced-motion: reduce){
+
+    *{
+
+        animation:none !important;
+
+        transition:none !important;
+
+        scroll-behavior:auto !important;
+
+    }
+
+}
+@keyframes floatLogo{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-18px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+@keyframes heroGlow{
+
+    0%{
+
+        transform:scale(.95);
+
+        opacity:.6;
+
+    }
+
+    50%{
+
+        transform:scale(1.08);
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        transform:scale(.95);
+
+        opacity:.6;
+
+    }
+
+}

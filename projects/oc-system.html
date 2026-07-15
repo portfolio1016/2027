@@ -1,0 +1,2137 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+    <!-- =========================================
+         Basic
+    ========================================== -->
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Miracas Management System | KOSEI Portfolio</title>
+
+    <meta
+        name="description"
+        content="Miracas Management Systemの制作事例。学校のオープンキャンパス運営を支援するWebシステムとして、来場者管理・人員配置・チャット・OC管理などを実現したチーム開発プロジェクト。">
+
+    <meta
+        name="keywords"
+        content="Miracas,Open Campus,Portfolio,Web Director,Firebase,Firestore,HTML,CSS,JavaScript">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+
+    <link rel="stylesheet" href="../assets/css/animation.css">
+
+    <link rel="stylesheet" href="../assets/css/project.css">
+
+    <!-- Favicon -->
+
+    <link
+        rel="icon"
+        type="image/png"
+        href="../assets/images/sisutemurogo.png">
+
+</head>
+
+<body>
+
+<!-- =========================================
+     Header
+========================================== -->
+
+<header class="header">
+
+    <div class="container">
+
+        <a
+            href="../index.html"
+            class="header__logo">
+
+            KOSEI
+
+        </a>
+
+    </div>
+
+</header>
+
+<!-- =========================================
+     Hero
+========================================== -->
+
+<section class="project-hero">
+
+    <div class="container">
+
+        <div class="project-hero__content">
+
+            <!-- Left -->
+
+            <div class="project-hero__left">
+
+                <div class="project-hero__badge">
+
+                    🚀 REAL OPERATION PROJECT
+
+                </div>
+
+                <p class="project-hero__category">
+
+                    CASE STUDY
+
+                </p>
+
+                <h1 class="project-hero__title">
+
+                    Miracas<br>
+                    Management System
+
+                </h1>
+
+                <p class="project-hero__description">
+
+                    学校のオープンキャンパス運営を
+                    デジタル化することを目的に開発した
+                    Web運営支援システムです。
+
+                    来場者管理・座席管理・人員配置・
+                    チャット・オープンキャンパス管理など、
+                    運営に必要な情報を一元管理できる
+                    システムとして設計しました。
+
+                    私は3人チームで開発を行い、
+                    要件定義・画面設計・
+                    HTML / CSS / JavaScriptによる
+                    フロントエンド開発、
+                    Firebase Authentication・
+                    Firestore連携を担当しました。
+
+                    開発後は先生方との打ち合わせを重ね、
+                    実際のオープンキャンパスで
+                    運用されました。
+
+                </p>
+
+                <div class="project-hero__info">
+
+                    <div class="hero-info-card">
+
+                        <span>
+
+                            Team
+
+                        </span>
+
+                        <h3>
+
+                            3人開発
+
+                        </h3>
+
+                    </div>
+
+                    <div class="hero-info-card">
+
+                        <span>
+
+                            Period
+
+                        </span>
+
+                        <h3>
+
+                            約1.5か月
+
+                        </h3>
+
+                    </div>
+
+                    <div class="hero-info-card">
+
+                        <span>
+
+                            Status
+
+                        </span>
+
+                        <h3>
+
+                            実運用
+
+                        </h3>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Right -->
+
+            <div class="project-hero__right">
+
+                <div class="project-hero__visual">
+
+                    <img
+                        src="../assets/images/sisutemurogo.png"
+                        alt="OC Management System"
+                        class="project-hero__logo">
+                    </img>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =========================================
+     Project Overview
+========================================== -->
+
+<section
+    class="project-overview section"
+    id="overview">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-heading__sub">
+
+                PROJECT OVERVIEW
+
+            </span>
+
+            <h2 class="section-heading__title">
+
+                プロジェクト概要
+
+            </h2>
+
+            <p class="section-heading__description">
+
+                Miracas Management Systemは、
+                オープンキャンパス運営に必要な情報を一元管理するために
+                開発したWebシステムです。
+
+            </p>
+
+        </div>
+
+        <div class="project-overview__grid">
+
+            <div class="overview-card">
+
+                <span class="overview-card__label">
+
+                    PROJECT
+
+                </span>
+
+                <h3>
+
+                    Miracas Management System
+
+                </h3>
+
+                <p>
+
+                    学校オープンキャンパス運営支援システム
+
+                </p>
+
+            </div>
+
+            <div class="overview-card">
+
+                <span class="overview-card__label">
+
+                    DEVELOPMENT
+
+                </span>
+
+                <h3>
+
+                    約1.5か月
+
+                </h3>
+
+                <p>
+
+                    要件定義から実運用まで
+
+                </p>
+
+            </div>
+
+            <div class="overview-card">
+
+                <span class="overview-card__label">
+
+                    TEAM
+
+                </span>
+
+                <h3>
+
+                    3人開発
+
+                </h3>
+
+                <p>
+
+                    役割分担を行いながら共同開発
+
+                </p>
+
+            </div>
+
+            <div class="overview-card">
+
+                <span class="overview-card__label">
+
+                    ROLE
+
+                </span>
+
+                <h3>
+
+                    担当範囲
+
+                </h3>
+
+                <p>
+
+                    要件定義<br>
+                    画面設計<br>
+                    フロントエンド実装<br>
+                    Firebase Authentication<br>
+                    Firestore
+
+                </p>
+
+            </div>
+
+            <div class="overview-card">
+
+                <span class="overview-card__label">
+
+                    MAIN FEATURES
+
+                </span>
+
+                <h3>
+
+                    8機能
+
+                </h3>
+
+                <p>
+
+                    ホーム・来場者管理・座席表・
+                    人員配置・チャット・
+                    OC管理・ルーレット・
+                    システム設定
+
+                </p>
+
+            </div>
+
+            <div class="overview-card">
+
+                <span class="overview-card__label">
+
+                    TECHNOLOGY
+
+                </span>
+
+                <h3>
+
+                    12 Technologies
+
+                </h3>
+
+                <p>
+
+                    HTML / CSS / JavaScript<br>
+                    Firebase Authentication<br>
+                    Firestore<br>
+                    Hosting・GAS・AI
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =========================================
+     Background
+========================================== -->
+
+<section class="project-background section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-heading__sub">
+
+                BACKGROUND
+
+            </span>
+
+            <h2 class="section-heading__title">
+
+                プロジェクトの背景
+
+            </h2>
+
+            <p class="section-heading__description">
+
+                オープンキャンパス運営では、多くの情報をリアルタイムで共有する必要があります。
+                Miracas Management Systemは、その課題を解決するために開発しました。
+
+            </p>
+
+        </div>
+
+        <div class="project-background__wrapper">
+
+            <div class="background-content">
+
+                <h3>
+
+                    なぜ開発したのか
+
+                </h3>
+
+                <p>
+
+                    オープンキャンパス当日は、来場者受付・教室案内・
+                    人員配置・チーム連携など、多くの業務が同時に進行します。
+
+                </p>
+
+                <p>
+
+                    従来は紙や口頭で情報共有を行う場面が多く、
+                    情報更新の遅れや確認漏れが発生しやすいという課題がありました。
+
+                </p>
+
+                <p>
+
+                    そこで、必要な情報を一つのシステムで管理し、
+                    スタッフ全員がリアルタイムで同じ情報を確認できる環境を目指しました。
+
+                </p>
+
+            </div>
+
+            <div class="background-card">
+
+                <h3>
+
+                    解決したかった課題
+
+                </h3>
+
+                <ul>
+
+                    <li>
+
+                        来場者情報をリアルタイムで共有したい
+
+                    </li>
+
+                    <li>
+
+                        受付業務を効率化したい
+
+                    </li>
+
+                    <li>
+
+                        人員配置を分かりやすく管理したい
+
+                    </li>
+
+                    <li>
+
+                        チーム間の情報共有を改善したい
+
+                    </li>
+
+                    <li>
+
+                        オープンキャンパス全体を一元管理したい
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =========================================
+     Challenges
+========================================== -->
+
+<section class="project-challenges section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-heading__sub">
+
+                CHALLENGES
+
+            </span>
+
+            <h2 class="section-heading__title">
+
+                解決すべき課題
+
+            </h2>
+
+            <p class="section-heading__description">
+
+                オープンキャンパス運営では、受付だけでなく情報共有や人員配置など、
+                多くの業務を効率よく進める必要がありました。
+
+            </p>
+
+        </div>
+
+        <div class="challenge-grid">
+
+            <!-- Card 01 -->
+
+            <article class="challenge-card">
+
+                <span class="challenge-card__number">
+
+                    01
+
+                </span>
+
+                <h3>
+
+                    来場者管理の効率化
+
+                </h3>
+
+                <p>
+
+                    来場者情報をリアルタイムで管理し、
+                    検索・受付・教室振り分けまで
+                    一つのシステムで完結できるようにしました。
+
+                </p>
+
+            </article>
+
+            <!-- Card 02 -->
+
+            <article class="challenge-card">
+
+                <span class="challenge-card__number">
+
+                    02
+
+                </span>
+
+                <h3>
+
+                    情報共有の改善
+
+                </h3>
+
+                <p>
+
+                    チャット機能やリアルタイム同期を活用し、
+                    スタッフ全員が最新情報を
+                    すぐ確認できる環境を構築しました。
+
+                </p>
+
+            </article>
+
+            <!-- Card 03 -->
+
+            <article class="challenge-card">
+
+                <span class="challenge-card__number">
+
+                    03
+
+                </span>
+
+                <h3>
+
+                    人員配置の最適化
+
+                </h3>
+
+                <p>
+
+                    ドラッグ＆ドロップによる配置変更や
+                    欠席管理を行えるようにし、
+                    当日の運営負担を軽減しました。
+
+                </p>
+
+            </article>
+
+            <!-- Card 04 -->
+
+            <article class="challenge-card">
+
+                <span class="challenge-card__number">
+
+                    04
+
+                </span>
+
+                <h3>
+
+                    オープンキャンパス全体の一元管理
+
+                </h3>
+
+                <p>
+
+                    イベント管理・AI要約・PDF出力など、
+                    運営に必要な機能を一つに集約し、
+                    管理業務を効率化しました。
+
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =========================================
+     Goals
+========================================== -->
+
+<section class="project-goals section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-heading__sub">
+
+                GOALS
+
+            </span>
+
+            <h2 class="section-heading__title">
+
+                プロジェクト目標
+
+            </h2>
+
+            <p class="section-heading__description">
+
+                Miracas Management Systemでは、
+                オープンキャンパス運営を支える仕組みづくりを目標に、
+                「使いやすさ」「情報共有」「運営効率」の3つを重視して開発しました。
+
+            </p>
+
+        </div>
+
+        <div class="goals-grid">
+
+            <!-- Goal 01 -->
+
+            <article class="goal-card">
+
+                <span class="goal-card__number">
+
+                    01
+
+                </span>
+
+                <h3>
+
+                    誰でも使いやすいUI
+
+                </h3>
+
+                <p>
+
+                    初めて利用する学生スタッフでも迷わず操作できるよう、
+                    シンプルで直感的な画面設計を目指しました。
+
+                </p>
+
+            </article>
+
+            <!-- Goal 02 -->
+
+            <article class="goal-card">
+
+                <span class="goal-card__number">
+
+                    02
+
+                </span>
+
+                <h3>
+
+                    リアルタイムな情報共有
+
+                </h3>
+
+                <p>
+
+                    Firebase Firestoreを活用し、
+                    来場者情報や人員配置などをリアルタイムで共有できる
+                    システムを目指しました。
+
+                </p>
+
+            </article>
+
+            <!-- Goal 03 -->
+
+            <article class="goal-card">
+
+                <span class="goal-card__number">
+
+                    03
+
+                </span>
+
+                <h3>
+
+                    オープンキャンパス運営の効率化
+
+                </h3>
+
+                <p>
+
+                    来場者管理・人員配置・チャット・イベント管理などを
+                    一元化し、運営全体の負担を軽減することを目標としました。
+
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =========================================
+     My Role
+========================================== -->
+
+<section class="project-role section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-heading__sub">
+
+                MY ROLE
+
+            </span>
+
+            <h2 class="section-heading__title">
+
+                担当範囲
+
+            </h2>
+
+            <p class="section-heading__description">
+
+                3人チームで役割を分担しながら開発を進めました。
+                私は企画・設計からフロントエンド実装、データベース連携、
+                実運用まで幅広く担当しました。
+
+            </p>
+
+        </div>
+
+        <div class="role-grid">
+
+            <!-- Role 01 -->
+
+            <article class="role-card">
+
+                <span class="role-card__number">
+
+                    01
+
+                </span>
+
+                <h3>
+
+                    要件定義
+
+                </h3>
+
+                <p>
+
+                    オープンキャンパス運営で必要となる機能を洗い出し、
+                    チーム内や先生方との打ち合わせを通して
+                    システムの方向性を決定しました。
+
+                </p>
+
+            </article>
+
+            <!-- Role 02 -->
+
+            <article class="role-card">
+
+                <span class="role-card__number">
+
+                    02
+
+                </span>
+
+                <h3>
+
+                    UI・画面設計
+
+                </h3>
+
+                <p>
+
+                    学生スタッフでも迷わず操作できるよう、
+                    シンプルで分かりやすい画面構成と
+                    操作フローを設計しました。
+
+                </p>
+
+            </article>
+
+            <!-- Role 03 -->
+
+            <article class="role-card">
+
+                <span class="role-card__number">
+
+                    03
+
+                </span>
+
+                <h3>
+
+                    フロントエンド開発
+
+                </h3>
+
+                <p>
+
+                    HTML・CSS・JavaScriptを使用し、
+                    ホーム・来場者管理・座席表・
+                    人員配置図・管理画面など
+                    各画面の実装を担当しました。
+
+                </p>
+
+            </article>
+
+            <!-- Role 04 -->
+
+            <article class="role-card">
+
+                <span class="role-card__number">
+
+                    04
+
+                </span>
+
+                <h3>
+
+                    Firebase連携
+
+                </h3>
+
+                <p>
+
+                    Firebase Authenticationによる認証機能と、
+                    Firestoreを利用した来場者情報や
+                    人員配置データの保存・同期を担当しました。
+
+                </p>
+
+            </article>
+
+            <!-- Role 05 -->
+
+            <article class="role-card">
+
+                <span class="role-card__number">
+
+                    05
+
+                </span>
+
+                <h3>
+
+                    実運用・改善
+
+                </h3>
+
+                <p>
+
+                    開発後は先生方と打ち合わせを重ねながら改善を行い、
+                    実際のオープンキャンパスで運用できる
+                    システムとして完成させました。
+
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =========================================
+     System Features
+========================================== -->
+
+<section class="project-features section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-heading__sub">
+
+                SYSTEM FEATURES
+
+            </span>
+
+            <h2 class="section-heading__title">
+
+                システム機能
+
+            </h2>
+
+            <p class="section-heading__description">
+
+                Miracas Management Systemでは、
+                オープンキャンパス運営を支えるための8つの主要機能を実装しました。
+
+            </p>
+
+        </div>
+
+        <div class="feature-grid">
+
+            <!-- 01 -->
+
+            <article class="feature-card">
+
+                <span class="feature-card__number">
+
+                    01
+
+                </span>
+
+                <h3>
+
+                    ホーム画面
+
+                </h3>
+
+                <p>
+
+                    システム全体の情報を確認するトップページ。
+                    最新連絡・イベント情報・目標・ショートカットを表示し、
+                    必要な機能へ素早くアクセスできます。
+
+                </p>
+
+            </article>
+
+            <!-- 02 -->
+
+            <article class="feature-card">
+
+                <span class="feature-card__number">
+
+                    02
+
+                </span>
+
+                <h3>
+
+                    座席表管理
+
+                </h3>
+
+                <p>
+
+                    ドラッグ＆ドロップで座席を配置し、
+                    Firestoreへ保存。
+                    当日の座席状況をリアルタイムで管理できます。
+
+                </p>
+
+            </article>
+
+            <!-- 03 -->
+
+            <article class="feature-card">
+
+                <span class="feature-card__number">
+
+                    03
+
+                </span>
+
+                <h3>
+
+                    来場者管理
+
+                </h3>
+
+                <p>
+
+                    来場者一覧・検索・受付・教室振り分け・
+                    ステータス管理を一つの画面で行えるようにしました。
+
+                </p>
+
+            </article>
+
+            <!-- 04 -->
+
+            <article class="feature-card">
+
+                <span class="feature-card__number">
+
+                    04
+
+                </span>
+
+                <h3>
+
+                    人員配置図
+
+                </h3>
+
+                <p>
+
+                    各チームの配置をドラッグ＆ドロップで変更。
+                    欠席管理やリアルタイム同期にも対応しています。
+
+                </p>
+
+            </article>
+
+            <!-- 05 -->
+
+            <article class="feature-card">
+
+                <span class="feature-card__number">
+
+                    05
+
+                </span>
+
+                <h3>
+
+                    チャット
+
+                </h3>
+
+                <p>
+
+                    リアルタイムチャット・通知・リアクション・
+                    未読管理など、
+                    スタッフ同士の情報共有を支援します。
+
+                </p>
+
+            </article>
+
+            <!-- 06 -->
+
+            <article class="feature-card">
+
+                <span class="feature-card__number">
+
+                    06
+
+                </span>
+
+                <h3>
+
+                    OC管理
+
+                </h3>
+
+                <p>
+
+                    FullCalendarを利用したイベント管理、
+                    AI要約・PDF出力・Google Sheets連携など、
+                    オープンキャンパス運営を効率化します。
+
+                </p>
+
+            </article>
+
+            <!-- 07 -->
+
+            <article class="feature-card">
+
+                <span class="feature-card__number">
+
+                    07
+
+                </span>
+
+                <h3>
+
+                    ルーレット
+
+                </h3>
+
+                <p>
+
+                    メンバーやチームをランダムで抽選できる機能を実装し、
+                    公平な担当決めをサポートします。
+
+                </p>
+
+            </article>
+
+            <!-- 08 -->
+
+            <article class="feature-card">
+
+                <span class="feature-card__number">
+
+                    08
+
+                </span>
+
+                <h3>
+
+                    システム設定
+
+                </h3>
+
+                <p>
+
+                    管理者設定・利用時間・ページ公開設定・
+                    ログ管理・チャット管理など、
+                    システム全体を管理できる機能を実装しました。
+
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =========================================
+     Development Process
+========================================== -->
+
+<section class="project-process section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-heading__sub">
+
+                DEVELOPMENT PROCESS
+
+            </span>
+
+            <h2 class="section-heading__title">
+
+                開発プロセス
+
+            </h2>
+
+            <p class="section-heading__description">
+
+                実際のオープンキャンパス運営を想定し、<br>
+                要件定義から実運用まで段階的に開発を進めました。
+
+            </p>
+
+        </div>
+
+        <div class="timeline">
+
+            <!-- 01 -->
+
+            <div class="timeline__item">
+
+                <div class="timeline__number">
+
+                    01
+
+                </div>
+
+                <div class="timeline__content">
+
+                    <h3>
+
+                        ヒアリング・課題整理
+
+                    </h3>
+
+                    <p>
+
+                        オープンキャンパス運営の流れや課題を整理し、
+                        必要な機能をチームで洗い出しました。
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- 02 -->
+
+            <div class="timeline__item">
+
+                <div class="timeline__number">
+
+                    02
+
+                </div>
+
+                <div class="timeline__content">
+
+                    <h3>
+
+                        要件定義・画面設計
+
+                    </h3>
+
+                    <p>
+
+                        必要な画面や機能を整理し、
+                        シンプルで直感的に操作できるUIを設計しました。
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- 03 -->
+
+            <div class="timeline__item">
+
+                <div class="timeline__number">
+
+                    03
+
+                </div>
+
+                <div class="timeline__content">
+
+                    <h3>
+
+                        フロントエンド実装
+
+                    </h3>
+
+                    <p>
+
+                        HTML・CSS・JavaScriptを使用し、
+                        ホーム・来場者管理・座席表・人員配置図など
+                        各画面を実装しました。
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- 04 -->
+
+            <div class="timeline__item">
+
+                <div class="timeline__number">
+
+                    04
+
+                </div>
+
+                <div class="timeline__content">
+
+                    <h3>
+
+                        Firebase連携
+
+                    </h3>
+
+                    <p>
+
+                        Firebase Authenticationによる認証機能と、
+                        Firestoreによるリアルタイムデータ管理を実装しました。
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- 05 -->
+
+            <div class="timeline__item">
+
+                <div class="timeline__number">
+
+                    05
+
+                </div>
+
+                <div class="timeline__content">
+
+                    <h3>
+
+                        機能追加・改善
+
+                    </h3>
+
+                    <p>
+
+                        FullCalendar・チャット・AI要約・
+                        PDF出力などの機能を追加し、
+                        操作性や利便性を向上させました。
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- 06 -->
+
+            <div class="timeline__item">
+
+                <div class="timeline__number">
+
+                    06
+
+                </div>
+
+                <div class="timeline__content">
+
+                    <h3>
+
+                        テスト・レビュー
+
+                    </h3>
+
+                    <p>
+
+                        チーム内で動作確認を行い、
+                        表示崩れや操作性を改善しながら完成度を高めました。
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- 07 -->
+
+            <div class="timeline__item">
+
+                <div class="timeline__number">
+
+                    07
+
+                </div>
+
+                <div class="timeline__content">
+
+                    <h3>
+
+                        先生との打ち合わせ
+
+                    </h3>
+
+                    <p>
+
+                        実際の運営方法に合わせて改善を重ね、
+                        現場で利用しやすいシステムへブラッシュアップしました。
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- 08 -->
+
+            <div class="timeline__item">
+
+                <div class="timeline__number">
+
+                    08
+
+                </div>
+
+                <div class="timeline__content">
+
+                    <h3>
+
+                        実運用
+
+                    </h3>
+
+                    <p>
+
+                        完成後は実際のオープンキャンパスで運用し、
+                        来場者管理や情報共有など、
+                        当日の運営を支えるシステムとして活用されました。
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =========================================
+     Tech Stack
+========================================== -->
+
+<section class="project-tech section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-heading__sub">
+
+                TECH STACK
+
+            </span>
+
+            <h2 class="section-heading__title">
+
+                使用技術
+
+            </h2>
+
+            <p class="section-heading__description">
+
+                Miracas Management Systemでは、
+                フロントエンドから認証・データベース・AI連携まで、
+                複数の技術を組み合わせてシステムを構築しました。
+
+            </p>
+
+        </div>
+
+        <div class="tech-grid">
+
+            <!-- Frontend -->
+
+            <article class="tech-card">
+
+                <span class="tech-card__category">
+
+                    Frontend
+
+                </span>
+
+                <h3>
+
+                    HTML5 / CSS3 / JavaScript
+
+                </h3>
+
+                <p>
+
+                    システム全体の画面実装を担当。
+                    レスポンシブ対応やUIアニメーションも実装しました。
+
+                </p>
+
+            </article>
+
+            <!-- UI -->
+
+            <article class="tech-card">
+
+                <span class="tech-card__category">
+
+                    UI Library
+
+                </span>
+
+                <h3>
+
+                    FullCalendar
+
+                </h3>
+
+                <p>
+
+                    オープンキャンパスの日程管理や
+                    イベントスケジュールをカレンダー形式で表示しました。
+
+                </p>
+
+            </article>
+
+            <!-- Database -->
+
+            <article class="tech-card">
+
+                <span class="tech-card__category">
+
+                    Database
+
+                </span>
+
+                <h3>
+
+                    Firebase Firestore
+
+                </h3>
+
+                <p>
+
+                    来場者情報・座席表・人員配置・
+                    チャットデータなどをリアルタイムで管理しました。
+
+                </p>
+
+            </article>
+
+            <!-- Authentication -->
+
+            <article class="tech-card">
+
+                <span class="tech-card__category">
+
+                    Authentication
+
+                </span>
+
+                <h3>
+
+                    Firebase Authentication
+
+                </h3>
+
+                <p>
+
+                    スタッフ・管理者のログイン認証を実装し、
+                    権限に応じた画面制御を行いました。
+
+                </p>
+
+            </article>
+
+            <!-- Hosting -->
+
+            <article class="tech-card">
+
+                <span class="tech-card__category">
+
+                    Hosting
+
+                </span>
+
+                <h3>
+
+                    Firebase Hosting
+
+                </h3>
+
+                <p>
+
+                    Webアプリケーションを公開し、
+                    ブラウザから利用できる環境を構築しました。
+
+                </p>
+
+            </article>
+
+            <!-- AI -->
+
+            <article class="tech-card">
+
+                <span class="tech-card__category">
+
+                    AI
+
+                </span>
+
+                <h3>
+
+                    Cloudflare Workers AI
+
+                </h3>
+
+                <p>
+
+                    オープンキャンパス終了後の振り返り内容を
+                    AIで要約する機能を実装しました。
+
+                </p>
+
+            </article>
+
+            <!-- Google -->
+
+            <article class="tech-card">
+
+                <span class="tech-card__category">
+
+                    Google Workspace
+
+                </span>
+
+                <h3>
+
+                    Google Apps Script / Google Sheets
+
+                </h3>
+
+                <p>
+
+                    PDF出力やスプレッドシートとの連携を行い、
+                    運営資料を自動生成できるようにしました。
+
+                </p>
+
+            </article>
+
+            <!-- Development -->
+
+            <article class="tech-card">
+
+                <span class="tech-card__category">
+
+                    Development
+
+                </span>
+
+                <h3>
+
+                    GitHub / VS Code
+
+                </h3>
+
+                <p>
+
+                    GitHubでソースコードを管理し、
+                    VS Codeを使用してチーム開発を行いました。
+
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =========================================
+     Results
+========================================== -->
+
+<section class="project-results section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-heading__sub">
+
+                RESULTS
+
+            </span>
+
+            <h2 class="section-heading__title">
+
+                プロジェクト成果
+
+            </h2>
+
+            <p class="section-heading__description">
+
+                Miracas Management Systemは、
+                オープンキャンパス運営を支えるシステムとして開発し、
+                実際の運営現場で活用されました。
+
+            </p>
+
+        </div>
+
+        <div class="results-grid">
+
+            <!-- 01 -->
+
+            <article class="result-card">
+
+                <span class="result-card__number">
+
+                    01
+
+                </span>
+
+                <h3>
+
+                    実際のオープンキャンパスで運用
+
+                </h3>
+
+                <p>
+
+                    開発したシステムは実際のオープンキャンパスで使用され、
+                    来場者受付や運営情報の管理に活用されました。
+
+                </p>
+
+            </article>
+
+            <!-- 02 -->
+
+            <article class="result-card">
+
+                <span class="result-card__number">
+
+                    02
+
+                </span>
+
+                <h3>
+
+                    情報共有の効率化
+
+                </h3>
+
+                <p>
+
+                    Firebase Firestoreのリアルタイム同期により、
+                    スタッフ全員が最新情報を共有できる環境を実現しました。
+
+                </p>
+
+            </article>
+
+            <!-- 03 -->
+
+            <article class="result-card">
+
+                <span class="result-card__number">
+
+                    03
+
+                </span>
+
+                <h3>
+
+                    運営業務の一元管理
+
+                </h3>
+
+                <p>
+
+                    来場者管理・座席表・人員配置・チャット・
+                    オープンキャンパス管理など、
+                    複数の業務を一つのシステムに集約しました。
+
+                </p>
+
+            </article>
+
+            <!-- 04 -->
+
+            <article class="result-card">
+
+                <span class="result-card__number">
+
+                    04
+
+                </span>
+
+                <h3>
+
+                    利用者目線の改善
+
+                </h3>
+
+                <p>
+
+                    先生方との打ち合わせやフィードバックをもとに改善を重ね、
+                    実際の運営で使いやすいシステムへブラッシュアップしました。
+
+                </p>
+
+            </article>
+
+            <!-- 05 -->
+
+            <article class="result-card">
+
+                <span class="result-card__number">
+
+                    05
+
+                </span>
+
+                <h3>
+
+                    チーム開発を経験
+
+                </h3>
+
+                <p>
+
+                    3人で役割を分担しながら開発を進め、
+                    GitHubを活用した共同開発やレビューを経験しました。
+
+                </p>
+
+            </article>
+
+            <!-- 06 -->
+
+            <article class="result-card">
+
+                <span class="result-card__number">
+
+                    06
+
+                </span>
+
+                <h3>
+
+                    継続的な改善を実践
+
+                </h3>
+
+                <p>
+
+                    開発して終わりではなく、
+                    実運用を見据えて改善を繰り返すことで、
+                    システムの完成度を高めました。
+
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =========================================
+     Learning
+========================================== -->
+
+<section class="project-learning section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-heading__sub">
+
+                LEARNING
+
+            </span>
+
+            <h2 class="section-heading__title">
+
+                このプロジェクトで学んだこと
+
+            </h2>
+
+            <p class="section-heading__description">
+
+                Miracas Management Systemの開発・実運用を通して、
+                技術だけでなく、利用者視点やチーム開発の重要性を学びました。
+
+            </p>
+
+        </div>
+
+        <div class="learning-grid">
+
+            <!-- 01 -->
+
+            <article class="learning-card">
+
+                <span class="learning-card__number">
+
+                    01
+
+                </span>
+
+                <h3>
+
+                    利用者目線で考える重要性
+
+                </h3>
+
+                <p>
+
+                    実際にシステムを利用する学生スタッフや先生方の立場を意識し、
+                    「誰でも迷わず使えること」を基準に画面設計や機能改善を行いました。
+
+                </p>
+
+            </article>
+
+            <!-- 02 -->
+
+            <article class="learning-card">
+
+                <span class="learning-card__number">
+
+                    02
+
+                </span>
+
+                <h3>
+
+                    チームで進める開発
+
+                </h3>
+
+                <p>
+
+                    3人で役割を分担しながら開発を進める中で、
+                    情報共有や進捗管理、レビューを通して、
+                    チーム開発におけるコミュニケーションの重要性を学びました。
+
+                </p>
+
+            </article>
+
+            <!-- 03 -->
+
+            <article class="learning-card">
+
+                <span class="learning-card__number">
+
+                    03
+
+                </span>
+
+                <h3>
+
+                    実運用を見据えた改善
+
+                </h3>
+
+                <p>
+
+                    開発して終わりではなく、
+                    先生方との打ち合わせやフィードバックをもとに改善を繰り返し、
+                    実際の運営で活用できるシステムへブラッシュアップしました。
+
+                </p>
+
+            </article>
+
+            <!-- 04 -->
+
+            <article class="learning-card">
+
+                <span class="learning-card__number">
+
+                    04
+
+                </span>
+
+                <h3>
+
+                    技術を組み合わせて価値を生み出す経験
+
+                </h3>
+
+                <p>
+
+                    HTML・CSS・JavaScriptだけでなく、
+                    Firebase Authentication・Firestore・
+                    FullCalendar・Google Apps Script・AIなど、
+                    複数の技術を組み合わせることで、
+                    利用者の課題を解決するシステムを構築できることを学びました。
+
+                </p>
+
+            </article>
+
+        </div>
+
+        <div class="learning-message">
+
+            <h3>
+
+                Reflection
+
+            </h3>
+
+            <p>
+
+                このプロジェクトを通して、
+                Webシステムは「作ること」が目的ではなく、
+                利用者の課題を解決し、運営を支える仕組みを提供することが重要だと実感しました。
+
+                今後も、企画・設計・デザイン・開発を一体で考え、
+                利用者にとって価値のあるサービスを提案できる
+                Webディレクターを目指していきます。
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================================
+     Next Project
+========================================== -->
+
+<section class="next-project section">
+
+    <div class="container">
+
+        <div class="next-project__content">
+
+            <span class="next-project__sub">
+
+                NEXT CASE STUDY
+
+            </span>
+
+            <h2 class="next-project__title">
+
+                次のプロジェクトを見る
+
+            </h2>
+
+            <p class="next-project__description">
+
+                Miracas Management System以外にも、
+                ロゴデザインやWeb制作など、
+                課題解決を目的とした制作実績を掲載しています。
+
+                次のケーススタディでは、
+                コンセプト設計からデザイン提案まで担当した
+                「Miracasロゴデザインコンペ」を紹介します。
+
+            </p>
+
+            <div class="next-project__buttons">
+
+                <a
+                    href="logo.html"
+                    class="button button--primary">
+
+                    Miracas Logo Project
+
+                </a>
+
+                <a
+                    href="../index.html#achievements"
+                    class="button button--secondary">
+
+                    実績一覧へ戻る
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =========================================
+     Footer
+========================================== -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer__content">
+
+            <h2>
+
+                KOSEI SHIMIZU
+
+            </h2>
+
+            <p>最後までご覧いただき、ありがとうございました。</p>
+
+        </div>
+
+        <div class="footer__bottom">
+
+            <p>
+
+                © 2026 KOSEI SHIMIZU.
+                All Rights Reserved.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<!-- =========================================
+     JavaScript
+========================================== -->
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+
+<script src="../assets/js/project.js"></script>
+
+</body>
+
+</html>
